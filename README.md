@@ -1,5 +1,8 @@
 # EvolutionTest
 
+Backend hecho por Johan Camilo Suárez Lopera para prueba de selección de e-volution.
+Contacto: johanc.suarez@hotmail.com
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
 
 ## Development server
