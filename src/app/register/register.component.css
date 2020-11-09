@@ -1,0 +1,269 @@
+*{
+    font-family: "Roboto Condensed", Helvetica, Arial, Lucida, sans-serif;
+  }
+  
+  a {
+    color: white;
+  }
+
+  label{
+    color: #FACF1F;
+  }
+  
+  .logoArbol{
+    position: relative;
+    top: 50px;
+    display: block;
+      margin: 0 auto;
+      width: 432px;
+      height: 432px;
+  }
+  
+  .logoEmocionante{
+    position: relative;
+    top: 50px;
+    display: block;
+      margin: 0 auto;
+      width: 756px;
+  }
+  
+  .contenedorForm{
+    background-color: rgba(140, 192, 132,1);
+    border-radius: 20px;
+    padding: 50px 50px 50px 50px;
+    margin: 100px 100px;
+  }
+  
+  
+  *, *:before, *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Nunito', sans-serif;
+      color: #384047;
+    }
+    
+    form {
+      max-width: 300px;
+      margin: 10px auto;
+      padding: 10px 20px;
+      background: #f4f7f8;
+      border-radius: 8px;
+    }
+    
+    h1 {
+      margin: 0 0 30px 0;
+      text-align: center;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      font-size: 16px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: #8a97a0;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+      margin-bottom: 30px;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin: 0 4px 8px 0;
+    }
+    
+    select {
+      padding: 6px;
+      height: 32px;
+      border-radius: 2px;
+    }
+    
+ 
+    
+    fieldset {
+      margin-bottom: 30px;
+      border: none;
+    }
+    
+    legend {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    
+    label.light {
+      font-weight: 300;
+      display: inline;
+    }
+    
+    .number {
+      background-color: #FACF1F;
+      color: #622c69;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      font-size: 1.2em;
+      margin-right: 4px;
+      line-height: 30px;
+      text-align: center;
+      text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+      border-radius: 100%;
+    }
+  
+    .subtitulo{
+      color: #FACF1F;
+      margin-left: 20px;
+      font-size: 30px;
+      display: inline;
+    }
+
+
+    
+    @media screen and (min-width: 480px) {
+    
+      form {
+        max-width: 480px;
+      }
+    
+    }
+  
+  
+    .div.et_pb_section.et_pb_section_0 {
+      background-image: linear-gradient(180deg,rgba(253,241,6,0.63) 27%,rgba(250,207,31,0.23) 81%),url(https://www.elarboldelmagnolio.com/wp-content/uploads/2020/09/backHome.jpg)!important;
+      }
+      
+      .et_pb_row_1.et_pb_row {
+      padding-top: 50px!important;
+      padding-right: 50px!important;
+      padding-bottom: 50px!important;
+      padding-left: 50px!important;
+      padding-top: 50px;
+      padding-right: 50px;
+      padding-bottom: 50px;
+      padding-left: 50px;
+      }
+      
+      .et_pb_text_0 h2 {
+      font-family: 'Roboto Condensed',Helvetica,Arial,Lucida,sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 4vw;
+      color: #facf1f!important;
+      }
+      
+      body, input, textarea, select {
+      font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+      font-size: 16px;
+      padding-bottom: 1em;
+      }
+      
+      .et_pb_newsletter_form .input, .et_pb_newsletter_form input[type=password], .et_pb_newsletter_form input[type=text], .et_pb_newsletter_form p.et_pb_newsletter_field input[type=text], .et_pb_newsletter_form p.et_pb_newsletter_field textarea, .et_pb_newsletter_form select, .et_pb_newsletter_form textarea {
+      -webkit-appearance: none;
+      padding: 14px 4%!important;
+      font-size: 16px;
+      color: #666;
+      background-color: #fff;
+      width: 100%;
+      font-weight: 400;
+      border-width: 0;
+      border-radius: 3px;
+      }
+      
+      body #page-container .et_pb_section .et_pb_signup_0.et_pb_subscribe .et_pb_newsletter_button.et_pb_button {
+      color: #622c69!important;
+      border-width: 0px!important;
+      border-radius: 20px;
+      font-size: 25px;
+      font-family: 'Roboto Condensed',Helvetica,Arial,Lucida,sans-serif!important;
+      font-weight: 700!important;
+      background-color: #facf1f;
+      }
+      
+      .et_pb_newsletter_button {
+      display: block;
+      color: inherit;
+      width: 100%;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      }
+      
+      .et_pb_button {
+      font-size: 20px;
+      font-weight: 500;
+      padding: .3em 1em;
+      line-height: 1.7em!important;
+      background-color: transparent;
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      border: 2px solid;
+      border-radius: 3px;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 19px 39px 18px 39px;
+        color: #622c69;
+        background-color: #facf1f;
+        font-size: 40px;
+        text-align: center;
+        font-style: normal;
+        border-radius: 5px;
+        width: 20%;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+        margin-bottom: 10px;
+      }
+
+      @media screen and (max-width: 480px) {
+    
+        .logoArbol{
+            width: 200px;
+            height: 200px;
+        }
+
+        .logoEmocionante{
+            width: 400px;
+        }
+
+        .contenedorForm{
+          position: relative;
+          top: 100px;
+          background-color: #622c69;
+          border-radius: 20px;
+          padding: 50px 0px 0px 0px;
+          margin: 0px 0px;
+        }
+
+        .botonRegistrarse{
+          width: 300px;
+        }
+      
+      }
+      

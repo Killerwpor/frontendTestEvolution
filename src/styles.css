@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+  }
+
+  body{
+    
+    background-image: url(https://www.publicdomainpictures.net/pictures/170000/nahled/yellow-gradient-background-1461271359KTH.jpg)!important;
+    
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+}

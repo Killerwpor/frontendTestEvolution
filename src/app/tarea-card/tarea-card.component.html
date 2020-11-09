@@ -1,0 +1,97 @@
+
+
+<div class="container">
+    <div class="notice notice-success" *ngIf="estado=='Al día'">
+        <strong><h2>{{nombre}}</h2></strong>
+        <p>Vence: {{fecha}}</p>        
+        <h6><p>Prioridad: {{prioridad}}</p></h6>
+        <h6>Estado: {{estado}}</h6>
+        <div class="row">
+            <div class="col">
+              <div ngbDropdown class="d-inline-block float-right">
+                <button class="btn btn-outline-primary " id="dropdownBasic1" ngbDropdownToggle>Acciones</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <button ngbDropdownItem (click)="openModal('eliminar')">Eliminar</button>
+                  <button ngbDropdownItem (click)="openModal('editar')">Editar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <div class="notice notice-danger" *ngIf="estado=='Vencida'">
+      <strong><h2>{{nombre}}</h2></strong>
+      <p>Vence: {{fecha}}</p>        
+      <h6><p>Prioridad: {{prioridad}}</p></h6>
+      <h6>Estado: {{estado}}</h6>
+      <div class="row">
+          <div class="col">
+            <div ngbDropdown class="d-inline-block float-right">
+              <button class="btn btn-outline-primary " id="dropdownBasic1" ngbDropdownToggle>Acciones</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem (click)="openModal('eliminar')">Eliminar</button>
+                <button ngbDropdownItem (click)="openModal('editar')">Editar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+       <!--MODAL ELIMINAR-->
+       <ng-template #deleteModal let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Eliminar tarea</h4>
+          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">            
+      <p>¿Esta seguro de eliminar esta tarea?</p>
+        </div>
+        
+        <div class="modal-footer">         
+         <button type="button" class="btn btn-success" (click)="modal.dismiss()">Cancelar</button>
+          <button type="button" class="btn btn-danger" (click)="eliminarTarea()">Eliminar</button>
+        </div>          
+        </ng-template>
+
+         <!--MODAL EDIDTAR-->
+         <ng-template #editarModal let-modal>
+          <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Agregar tarea</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-body">            
+                  <label for="nameTask">Nombre de la tarea:</label>
+                  <input type="text" id="nameTask" [(ngModel)]="nombreAux">
+                  
+                  <label for="prioridad">Prioridad:</label>
+
+                  <select name="prioridad" id="prioridad" [(ngModel)]="prioridadAux">
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Media</option>
+                    <option value="Baja">Baja</option>
+                  </select> 
+                  
+                  <input type="text" ngbDatepicker #d="ngbDatepicker" [(ngModel)]="fechaAux" style="display: none;"/>
+                  <button type="button" (click)="d.toggle()" class="btn btn-light" >Fecha</button>  
+          </div>
+          
+          <div class="modal-footer">         
+            <button type="button" class="btn btn-outline-success" (click)="editarTarea()">Guardar</button>
+          </div>          
+          </ng-template>
+
+ 
+    
+</div>
+
+<div class="footer">
+  <p>Hecho por Johan Camilo Suárez Lopera.</p>
+</div>

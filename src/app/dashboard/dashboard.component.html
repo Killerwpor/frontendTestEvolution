@@ -1,0 +1,76 @@
+<br>
+<ng-container *ngFor="let tarea of tareas">
+<app-tarea-card (reiniciar)="ngOnInit()" nombre="{{tarea.nombre}}" fecha="{{tarea.fecha}}" prioridad="{{tarea.prioridad}}" [idUsuario]="usuario"></app-tarea-card>
+</ng-container>
+
+<div class="container">
+
+     <button type="button" class="btn btn-labeled btn-success float-right" (click)="openModal('add')">
+        <span class="btn-label"><fa-icon [icon]="faPlus"></fa-icon></span>Agregar tarea</button> 
+
+        <!--MODAL Agregar-->
+        <ng-template #addModal let-modal>
+                <div class="modal-header">
+                  <h4 class="modal-title" id="modal-basic-title">Agregar tarea</h4>
+                  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                
+                <div class="modal-body">            
+                        <label for="nameTask">Nombre de la tarea:</label>
+                        <input type="text" id="nameTask" [(ngModel)]="name">
+                        
+                        <label for="prioridad">Prioridad:</label>
+
+                        <select name="prioridad" id="prioridad" [(ngModel)]="prioridad">
+                          <option value="Alta">Alta</option>
+                          <option value="Media">Media</option>
+                          <option value="Baja">Baja</option>
+                        </select> 
+                        
+                        <input type="text" ngbDatepicker #d="ngbDatepicker" [(ngModel)]="date" style="display: none;"/>
+                        <button type="button" (click)="d.toggle()" class="btn btn-light" >Fecha</button>  
+                </div>
+                
+                <div class="modal-footer">         
+                  <button type="button" class="btn btn-outline-success" (click)="nuevaTarea()">Guardar</button>
+                </div>          
+                </ng-template>
+
+                
+                   <!--MODAL EDITAR-->
+        <ng-template #addModal let-modal>
+                <div class="modal-header">
+                  <h4 class="modal-title" id="modal-basic-title">Agregar tarea</h4>
+                  <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                
+                <div class="modal-body">            
+                        <label for="nameTask">Nombre de la tarea:</label>
+                        <input type="text" id="nameTask" [(ngModel)]="name">
+                        
+                        <label for="prioridad">Prioridad:</label>
+
+                        <select name="prioridad" id="prioridad" [(ngModel)]="prioridad">
+                          <option value="Alta">Alta</option>
+                          <option value="Media">Media</option>
+                          <option value="Baja">Baja</option>
+                        </select> 
+                        
+                        <input type="text" ngbDatepicker #d="ngbDatepicker" [(ngModel)]="date" style="display: none;"/>
+                        <button type="button" (click)="d.toggle()" class="btn btn-light" >Fecha</button>  
+                </div>
+                
+                <div class="modal-footer">         
+                  <button type="button" class="btn btn-outline-success" (click)="nuevaTarea()">Guardar</button>
+                </div>          
+                </ng-template>
+
+                <div class="footer">
+                  <p>Hecho por Johan Camilo Suárez Lopera.</p>
+                </div>
+
+</div>
